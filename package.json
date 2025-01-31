@@ -1,6 +1,6 @@
 {
     "name": "chainlink-guru-assets",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Nơi chia sẻ thông tin về Chainlink - Tiêu chuẩn cho Tài Chính OnChain",
     "homepage": "https://www.chainlink.guru",
     "scripts": {

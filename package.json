@@ -1,0 +1,35 @@
+{
+    "name": "chainlink-guru-assets",
+    "version": "1.0.0",
+    "description": "Nơi chia sẻ thông tin về Chainlink - Tiêu chuẩn cho Tài Chính OnChain",
+    "homepage": "https://www.chainlink.guru",
+    "scripts": {
+        "dev": "concurrently \"npm run watch-compile\" \"npm run watch-dev\"",
+        "watch-compile": "swc src -w --strip-leading-paths --out-dir public",
+        "watch-dev": "nodemon --watch \"public/**/*\" -e js ./public/index.js",
+        "build": "swc src --strip-leading-paths -d public",
+        "start": "node public/index.js",
+        "deploy": "run-s build start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@swc/cli": "^0.6.0",
+        "@swc/core": "^1.10.12",
+        "@types/node": "^22.12.0",
+        "concurrently": "^9.1.2",
+        "dotenv": "^16.4.7",
+        "nodemon": "^3.1.9",
+        "npm-run-all": "^4.1.5",
+        "rimraf": "^6.0.1",
+        "typescript": "^5.7.3"
+    },
+    "dependencies": {
+        "@coderosh/image-size": "^2.0.1",
+        "@octokit/rest": "^21.1.0",
+        "axios": "^1.7.9",
+        "file-type": "^20.0.0",
+        "image-size": "^1.2.0"
+    }
+}

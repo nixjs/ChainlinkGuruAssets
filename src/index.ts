@@ -2,7 +2,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import { imageSize } from 'image-size'
 import * as dotenv from 'dotenv'
-import axios, { AxiosRequestConfig } from 'axios'
+import axios from 'axios'
 
 dotenv.config()
 

@@ -84,6 +84,7 @@ async function main() {
         }
     }
     const content = Buffer.from(JSON.stringify(list)).toString('base64')
+    console.log('Chainlink.guru => Generating')
     return await commitFile('list.json', content)
 }
 main().then(() => console.log('Chainlink.guru => DONE'))
